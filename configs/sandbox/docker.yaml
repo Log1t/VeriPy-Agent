@@ -1,0 +1,11 @@
+runtime: docker
+image: python:3.12-slim@sha256:09f7da3bc104798d0afb40bc08d23ab2da20a76130cec1f2ef170848f5d85217
+network: none
+read_only_root: true
+capabilities: []
+read_only_filesystem: true
+memory_mb: 2048
+cpus: 2
+pids_limit: 256
+timeout_seconds: 10
+allow_host_network: false

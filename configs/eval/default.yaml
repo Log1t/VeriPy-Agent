@@ -1,0 +1,18 @@
+primary_metric: task_success
+confidence_interval: {method: bootstrap, level: 0.95}
+generation: {pass_at_1_temperature: 0.0, pass_at_4_seed: 42}
+metrics:
+  - task_success
+  - evidence_consistency
+  - first_action_accuracy
+  - valid_tool_call_rate
+  - execution_success_rate
+  - error_recovery_rate
+  - average_turns
+  - average_tool_calls
+  - average_tokens
+  - average_runtime
+  - repetition_rate
+  - premature_submission_rate
+  - max_turn_rate
+benchmarks: [veripy_iid, veripy_ood, ds_1000, datascibench_local_subset]

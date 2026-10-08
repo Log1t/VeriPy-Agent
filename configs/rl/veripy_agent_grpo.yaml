@@ -1,0 +1,16 @@
+env:
+  env_name: veripy
+  resources_per_worker: 0.1
+  sandbox_image: veripy-python-sandbox:latest
+  sandbox_image_id: sha256:3ea37a5cbacb6446273abe4d9d07759ed97d8e7ed84e822a9a384544e5d0d8c3
+  dataset_root: data/generated
+  scratch_root: artifacts/rollouts
+  rollout:
+    n: 4
+actor_rollout_ref:
+  rollout:
+    n: 1
+    multi_turn:
+      enable: true
+      max_turns: 6
+      format: hermes

@@ -1,0 +1,3 @@
+# VeriPy tools are executed by the external step-level environment, not by the
+# rollout engine's optional in-process tool plugins.
+tools: []

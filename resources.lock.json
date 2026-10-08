@@ -1,0 +1,12 @@
+{
+  "schema": "veripy.resources.lock",
+  "schema_version": 1,
+  "verification": {"algorithm": "sha256"},
+  "resources": [
+    {"name":"Qwen/Qwen3-1.7B","type":"model","source":"https://huggingface.co/Qwen/Qwen3-1.7B","revision":"70d244cc86ccca08cf5af4e1e306ecf908b1ad5e","sha256":"f0e7d35c4f5aca99b092a13a0586d1e0ea028ba38561017c1f1aae8812802edc","license":"Apache-2.0","local_path":"models/Qwen3-1.7B","local_path_env":"VERIPY_QWEN3_LOCAL_PATH","status":"verified"},
+    {"name":"LLaMA-Factory","type":"git-archive","source":"https://github.com/hiyouga/LLaMA-Factory","revision":"ef2d8f9da66ef13378dc8068dabc99cfe89a9736","sha256":"a11177b2cca35d279e802aa57c1f469593f60f8b885b5698a2e84ebe2f563d13","license":"Apache-2.0","status":"verified"},
+    {"name":"verl-agent","type":"git-archive","source":"https://github.com/langfengQ/verl-agent","revision":"080965f74fb2d6390cc750cdd07928551f22c2aa","sha256":"0601323609b1f7253533133c5b6521d01873635d175ae8cd417c6eb7b87271f4","license":"Apache-2.0","status":"verified"},
+    {"name":"veRL","type":"git-archive","source":"https://github.com/volcengine/verl","revision":"0758489422e8d41a89e6c36d4c477714520f0dcc","sha256":"b4669cee27e9553fa89d11049d5d256e9fa7a4a42e1539ae3a53eba6d78085e3","license":"Apache-2.0","status":"verified"},
+    {"name":"python:3.12-slim","type":"docker-base","source":"python:3.12-slim","revision":"sha256:09f7da3bc104798d0afb40bc08d23ab2da20a76130cec1f2ef170848f5d85217","digest":"sha256:09f7da3bc104798d0afb40bc08d23ab2da20a76130cec1f2ef170848f5d85217","sha256":"09f7da3bc104798d0afb40bc08d23ab2da20a76130cec1f2ef170848f5d85217","license":"Apache-2.0","status":"verified"}
+  ]
+}

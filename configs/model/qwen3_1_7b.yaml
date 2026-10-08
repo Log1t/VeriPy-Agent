@@ -1,0 +1,9 @@
+model:
+  name: Qwen/Qwen3-1.7B
+  revision: 70d244cc86ccca08cf5af4e1e306ecf908b1ad5e
+  local_path: models/Qwen3-1.7B
+  local_path_env: VERIPY_QWEN3_LOCAL_PATH
+  torch_dtype: bfloat16
+  max_seq_len: 8192
+  tokenizer: Qwen/Qwen3-1.7B
+  trust_remote_code: false

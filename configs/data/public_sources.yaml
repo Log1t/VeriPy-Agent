@@ -1,0 +1,53 @@
+schema: veripy.public_sources
+schema_version: 1
+sources:
+  - name: finqa
+    kind: table_reasoning
+    source: https://github.com/czyssrs/FinQA
+    revision: 0f16e2867befa6840783e58be38c9efb9229d742
+    license: MIT
+    license_file: LICENSE
+    allowed_usage: train_dev_only
+    selected_splits: [train, dev]
+    test_policy: private_test_only
+    contamination_risk: medium
+  - name: tatqa
+    kind: hybrid_table_text_reasoning
+    source: https://github.com/NExTplusplus/TAT-QA
+    revision: 870accc41953dcde885aabeb963d94aabdc0fbc3
+    license: CC-BY-4.0
+    license_file: README.md
+    allowed_usage: train_dev_only
+    selected_splits: [train, dev]
+    test_policy: evaluation_only
+    contamination_risk: high
+  - name: wikitablequestions
+    kind: table_reasoning
+    source: https://github.com/ppasupat/WikiTableQuestions
+    revision: 7d455a5a707b96341ef72aff9428749d443d8aa9
+    license: CC-BY-SA-4.0
+    license_file: LICENSE
+    allowed_usage: train_dev_only
+    selected_splits: [training]
+    test_policy: pristine_unseen_tables_only
+    contamination_risk: high
+  - name: ds1000
+    kind: code_execution_benchmark
+    source: https://github.com/xlang-ai/DS-1000
+    revision: b39aab71da6d23ef8d3cac59a7c5f834516ab334
+    license: CC-BY-SA-4.0
+    license_file: LICENSE
+    allowed_usage: evaluation_only
+    selected_splits: [test]
+    exclusion_reason: public test benchmark; never use for SFT or RL generation
+    contamination_risk: very_high
+  - name: opencodeinterpreter
+    kind: tool_execution
+    source: https://github.com/OpenCodeInterpreter/OpenCodeInterpreter
+    revision: 9674d8a521df7f92becd8a7a8e60a8792e71869a
+    license: pending_source_dataset_verification
+    license_file: LICENSE
+    allowed_usage: audit_only
+    selected_splits: []
+    exclusion_reason: dataset license and replayable subset provenance require separate verification
+    contamination_risk: high

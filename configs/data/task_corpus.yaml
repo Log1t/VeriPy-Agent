@@ -1,0 +1,10 @@
+output_root: data/generated
+manifest_path: data/manifests/task_corpus.json
+lock_path: configs/data/task_corpus.lock.json
+base_seed: 41000
+splits:
+  sft_train: 3000
+  rl_train: 8000
+  validation: 800
+  iid_test: 1000
+  ood_test: 1000
